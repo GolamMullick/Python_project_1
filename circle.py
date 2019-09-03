@@ -1,8 +1,15 @@
+import turtle
+
+
 class Circle():
     def __init__(self, r):
         self.radius = r
+        
 
     def area(self):
+        #to draw circle
+        t = turtle.Turtle()
+        t.circle(self.radius)
         return self.radius**2*3.14
 
     def perimeter(self):
@@ -11,3 +18,5 @@ class Circle():
 NewCircle = Circle(4)
 print(NewCircle.area())
 print(NewCircle.perimeter())
+
+
